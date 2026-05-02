@@ -3,7 +3,6 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link rel="icon" href="data:,"/>
 <title>Desafios - High Performance Fitness</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;family=Lexend:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
@@ -127,9 +126,9 @@
 <body class="bg-background text-on-background min-h-screen pb-32">
 <!-- TopAppBar JSON execution -->
 <header class="bg-zinc-950/80 backdrop-blur-xl font-['Space_Grotesk'] uppercase tracking-tighter font-black docked full-width top-0 sticky z-50 border-b border-zinc-800 flat no-shadows active:scale-95 duration-200 transition-transform flex justify-between items-center h-16 px-6 w-full max-w-screen-2xl mx-auto">
-<button class="text-on-background hover:text-secondary-container transition-colors p-2">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
+<a href="treinos.html" class="text-on-background hover:text-[#DFFF00] transition-colors p-2 flex items-center gap-1" aria-label="Voltar aos treinos">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</a>
 <h1 class="text-lime-400 dark:text-[#DFFF00] text-headline-md font-headline-md">Desafios</h1>
 <div class="h-8 w-8 rounded-full overflow-hidden border border-surface-container-high">
 <img alt="User athlete profile picture" class="h-full w-full object-cover" data-alt="A close up portrait of a highly focused athlete looking off-camera. The lighting is dramatic and moody, utilizing high contrast against a completely dark background. Vibrant lime green and electric blue rim lights illuminate the edges of their face, perfectly matching a high-intensity, dark-mode fitness app aesthetic. The mood is determined, intense, and ready for action." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByAVOgrl1YPC52o1I7WIYYqjXDIE4hDstLXk2Hmer2K-Z5I3VfO96VFta7JfEP0ulx0XdAx2ND0Smv7gk3l3RXdaWcZwIhjqciZR7TNOYKWkZWbe4mWAmF5TY2ECtXdqSvb3ksvP7XRrI6_KwU7hzua4G2bTgkfARXFsYR2AMn0nF_3DRaTPcdNJjHOnpyka3h0KSoTsQd7_8pRt-tU_1on0O-sZmdMbs-wyxkjoQTdl8ASpDLcdUKbIQQdw5nFVNtScMYOv2WyJic"/>
@@ -244,27 +243,23 @@
 </div>
 </section>
 </main>
-<!-- BottomNavBar JSON execution -->
-<nav class="bg-zinc-950/90 backdrop-blur-2xl font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-widest fixed bottom-0 w-full z-50 border-t border-zinc-800 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 px-4 pb-safe md:hidden">
-<!-- Início (Inactive) -->
-<a class="flex flex-col items-center justify-center text-zinc-600 hover:text-cyan-400 transition-all active:scale-90 duration-150 gap-1" href="treinos.html">
-<span class="material-symbols-outlined text-[24px]" data-icon="home">home</span>
-<span>Início</span>
+<!-- BottomNavBar (EVOLVE padrão: sub-tela Desafios sob Workouts) -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-safe pt-3 bg-[#121212]/80 backdrop-blur-2xl rounded-t-3xl shadow-[0_-4px_20px_rgba(223,255,0,0.05)] md:hidden z-50 border-t border-[#2A2A2A]/50" aria-label="Primary navigation">
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest gap-1" href="treinos.html">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span>Home</span>
 </a>
-<!-- Desafios (Active) -->
-<a class="flex flex-col items-center justify-center text-lime-400 drop-shadow-[0_0_8px_rgba(223,255,0,0.4)] active:scale-90 transition-all duration-150 gap-1" href="desafios.html">
-<span class="material-symbols-outlined text-[24px] fill" data-icon="workspace_premium" data-weight="fill">workspace_premium</span>
-<span>Desafios</span>
+<a aria-current="page" class="flex flex-col items-center justify-center text-[#DFFF00] bg-[#DFFF00]/10 rounded-xl px-4 py-1 shadow-[inset_0_0_10px_rgba(223,255,0,0.2)] font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest gap-1 scale-95" href="treinos.html">
+<span class="material-symbols-outlined" data-icon="fitness_center" style="font-variation-settings:'FILL' 1">fitness_center</span>
+<span>Workouts</span>
 </a>
-<!-- Treinos (Inactive) -->
-<a class="flex flex-col items-center justify-center text-zinc-600 hover:text-cyan-400 transition-all active:scale-90 duration-150 gap-1" href="treinos.html">
-<span class="material-symbols-outlined text-[24px]" data-icon="fitness_center">fitness_center</span>
-<span>Treinos</span>
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest gap-1" href="gr_ficos_de_progresso.html">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span>History</span>
 </a>
-<!-- Perfil (Inactive) -->
-<a class="flex flex-col items-center justify-center text-zinc-600 hover:text-cyan-400 transition-all active:scale-90 duration-150 gap-1" href="perfil.html">
-<span class="material-symbols-outlined text-[24px]" data-icon="person">person</span>
-<span>Perfil</span>
+<a class="flex flex-col items-center justify-center text-gray-500 opacity-60 hover:opacity-100 hover:text-white font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest gap-1" href="perfil.html">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>Profile</span>
 </a>
 </nav>
 </body></html>
