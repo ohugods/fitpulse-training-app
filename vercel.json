@@ -1,5 +1,44 @@
-﻿{
+{
   "rewrites": [
-    { "source": "/screens/:path*", "destination": "/src/screens/:path*" }
+    {
+      "source": "/screens/gr_ficos_de_progresso.html",
+      "destination": "/src/screens/history.html"
+    },
+    {
+      "source": "/src/screens/gr_ficos_de_progresso.html",
+      "destination": "/src/screens/history.html"
+    },
+    {
+      "source": "/screens/detalhes_do_exerc_cio.html",
+      "destination": "/src/screens/exercise-detail.html"
+    },
+    {
+      "source": "/src/screens/detalhes_do_exerc_cio.html",
+      "destination": "/src/screens/exercise-detail.html"
+    },
+    {
+      "source": "/screens/desafios.html",
+      "destination": "/src/screens/challenges.html"
+    },
+    {
+      "source": "/src/screens/desafios.html",
+      "destination": "/src/screens/challenges.html"
+    },
+    {
+      "source": "/screens/treinos.html",
+      "destination": "/src/screens/workouts.html"
+    },
+    {
+      "source": "/src/screens/treinos.html",
+      "destination": "/src/screens/workouts.html"
+    },
+    {
+      "source": "/screens/perfil.html",
+      "destination": "/src/screens/profile.html"
+    },
+    {
+      "source": "/src/screens/perfil.html",
+      "destination": "/src/screens/profile.html"
+    }
   ]
 }
